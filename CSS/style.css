@@ -1,0 +1,246 @@
+/* Google fonts - poppins & josefin sans */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+/* ------------------
+   Header start Here
+---------------------- */
+header {
+  width: 100%;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+.logo {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+.logo span {
+  font-family: "Josefin Sans", sans-serif;
+  color: #e02c6d;
+}
+.navigation ul li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 10px;
+}
+.navigation ul li a {
+  text-decoration: none;
+  color: #3a3a3a;
+  font-weight: 600;
+}
+.filled {
+  padding: 10px;
+}
+.navigation ul li a:hover {
+  color: #f9004d;
+  transition: 0.4s;
+}
+.navigation ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #f9004d;
+  margin: auto;
+  display: block;
+}
+.navigation ul li a:hover::after {
+  transition: 0.4s;
+  width: 40px;
+}
+
+.feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  margin-left: 8%;
+  margin-right: 8%;
+  color: #3a3a3a;
+}
+.feature-left {
+  line-height: 40px;
+}
+.feature-left h1 {
+  letter-spacing: 2px;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 60px;
+}
+.feature-left span {
+  color: #f9004d;
+}
+.feature-left p {
+  line-height: 25px;
+  padding-top: 20px;
+}
+.feature-left a {
+  text-decoration: none;
+  color: white;
+  background-color: #f9004d;
+  padding: 10px 25px;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  font-size: 15px;
+  transition: transform 0.4s;
+}
+.feature-left a:hover {
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  transform: scale(1.1);
+}
+.feature-left a i {
+  color: white;
+  background-color: #f9004d;
+  padding-left: 10px;
+}
+
+.feature-right {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.under-circle {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.main-img {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.main-img:hover {
+  transform: scale(1.2);
+  transition: 0.4s;
+}
+/* ------------
+     Client logo
+     ------------ */
+.logos {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-column-gap: 60px;
+  align-items: center;
+  border: 1px solid #f1eded;
+  border-left: none;
+  border-right: none;
+  width: 1110px;
+  height: 110px;
+  margin: 100px 165px 100px 165px;
+  margin-left: 20%;
+}
+/* collection area */
+
+.collection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 2%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.collection-heading {
+  text-align: center;
+  margin-top: 70px;
+  font-size: 30px;
+}
+.collection-heading span {
+  color: #f9004d;
+}
+.card {
+  width: 328px;
+  height: 490px;
+  margin: 20px;
+  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+.card-image {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 45px;
+}
+.card-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 100px;
+  color: orangered;
+}
+.card-details p {
+  color: black;
+}
+.see-more {
+  color: #e02c6d;
+  text-align: center;
+  margin-left: 52%;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  height: 200px;
+  font-size: 25px;
+  line-height: 40px;
+  margin-top: 10px;
+}
+
+footer p {
+  font-size: 14px;
+  color: white;
+  line-height: 24px;
+}
+.social-media {
+  margin: 17px 16px;
+}
+
+.social-media a {
+  width: 32px;
+  height: 32px;
+  padding: 5px;
+  border-radius: 50px;
+  background-color: #13243d;
+  color: #ffffff;
+}
+@media only screen and (max-width: 576px) {
+  .navigation {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .logos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .feature {
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
+  }
+  .collection {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0;
+    padding: 0;
+  }
+  .main-img {
+    margin: 0;
+    padding: 0;
+    width: 75%;
+  }
+}
+@media only screen and (min-device-width: 577px) and (max-device-width: 768px) {
+  .collection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
